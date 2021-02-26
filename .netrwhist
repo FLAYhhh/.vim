@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/home/kazuki/Codes/penglai/test_monitor/build'
+let g:netrw_dirhist_3='/home/kazuki/Codes/penglai/test_monitor'
+let g:netrw_dirhist_2='/home/kazuki/Codes/penglai'
+let g:netrw_dirhist_1='/home/kazuki/Codes/penglai/test_monitor'
+let g:netrw_dirhist_0='/home/kazuki/Codes/penglai/test_monitor/build'
+let g:netrw_dirhist_9='/home/kazuki/Codes/penglai/test_monitor/build/bbl'
+let g:netrw_dirhist_8='/home/kazuki/Codes/penglai/test_monitor/build/bbl/CMakeFiles'
+let g:netrw_dirhist_7='/home/kazuki/Codes/penglai/test_monitor/build/bbl/CMakeFiles/board_linker_script.dir'
+let g:netrw_dirhist_6='/home/kazuki/Codes/penglai/test_monitor/build/bbl/CMakeFiles'
+let g:netrw_dirhist_5='/home/kazuki/Codes/penglai/test_monitor/build/bbl'
