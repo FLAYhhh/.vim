@@ -94,3 +94,19 @@ nnoremap <silent> <F8> :TlistToggle<CR>
 set hlsearch
 set list
 set listchars=tab:>-,trail:.
+
+"color scheme
+syntax enable
+set background=dark
+set termguicolors
+colorscheme s
+
+"if $COLORTERM == 'truecolor'
+"    set termguicolors
+"    colorscheme s
+"else
+"    set term=xterm
+"    set t_Co=256
+"    colorscheme solarized
+"endif
+
