@@ -74,13 +74,20 @@ nnoremap <Right> :echoe "Use l"<CR>
 nnoremap <Up>    :echoe "Use k"<CR>
 nnoremap <Down>  :echoe "Use j"<CR>
 " ...and in insert mode
-inoremap <Left>  <ESC>:echoe "Use h"<CR>
-inoremap <Right> <ESC>:echoe "Use l"<CR>
-inoremap <Up>    <ESC>:echoe "Use k"<CR>
-inoremap <Down>  <ESC>:echoe "Use j"<CR>
+"inoremap <Left>  <ESC>:echoe "Use h"<CR>
+"inoremap <Right> <ESC>:echoe "Use l"<CR>
+"inoremap <Up>    <ESC>:echoe "Use k"<CR>
+"inoremap <Down>  <ESC>:echoe "Use j"<CR>
 
+"CtrlP.vim
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+
+"NERDTree.vim
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-e> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
 
 set ts=4
 nnoremap <silent> <F8> :TlistToggle<CR>
