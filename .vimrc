@@ -97,9 +97,9 @@ set listchars=tab:>-,trail:.
 
 "color scheme
 syntax enable
-set background=dark
+"set background=dark
 set termguicolors
-colorscheme s
+"colorscheme s
 
 "if $COLORTERM == 'truecolor'
 "    set termguicolors
