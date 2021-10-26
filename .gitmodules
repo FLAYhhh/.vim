@@ -4,3 +4,6 @@
 [submodule "pack/vendor/start/LeaderF"]
 	path = pack/vendor/start/LeaderF
 	url = https://github.com/Yggdroot/LeaderF.git
+[submodule "/Users/kazuki/.vim/pack/themes/opt/solarized8"]
+	path = /Users/kazuki/.vim/pack/themes/opt/solarized8
+	url = https://github.com/lifepillar/vim-solarized8.git

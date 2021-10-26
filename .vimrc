@@ -97,19 +97,15 @@ set list
 set listchars=tab:>-,trail:.
 
 "color scheme
-syntax enable
+"highlight Normal ctermbg=NONE
+"highlight nonText ctermbg=NONE
 "set background=dark
 set termguicolors
-"colorscheme s
+"let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+"let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+colorscheme solarized8
 
-"if $COLORTERM == 'truecolor'
-"    set termguicolors
-"    colorscheme s
-"else
-"    set term=xterm
-"    set t_Co=256
-"    colorscheme solarized
-"endif
+syntax enable
 
 """"""Leaderf config"""""""
 " don't show the help in normal mode
@@ -143,4 +139,6 @@ noremap <leader>fd :<C-U><C-R>=printf("Leaderf! gtags -d %s --auto-jump", expand
 noremap <leader>fo :<C-U><C-R>=printf("Leaderf! gtags --recall %s", "")<CR><CR>
 noremap <leader>fn :<C-U><C-R>=printf("Leaderf gtags --next %s", "")<CR><CR>
 noremap <leader>fp :<C-U><C-R>=printf("Leaderf gtags --previous %s", "")<CR><CR>
+
+let g:Lf_CommandMap = {'<C-K>': ['<Up>'], '<C-J>': ['<Down>']}
 
