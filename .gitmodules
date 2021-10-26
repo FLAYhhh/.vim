@@ -1,3 +1,6 @@
 [submodule "pack/vendor/start/ctrlp.vim"]
 	path = pack/vendor/start/ctrlp.vim
 	url = https://github.com/ctrlpvim/ctrlp.vim
+[submodule "pack/vendor/start/LeaderF"]
+	path = pack/vendor/start/LeaderF
+	url = https://github.com/Yggdroot/LeaderF.git
