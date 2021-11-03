@@ -99,8 +99,13 @@ set listchars=tab:>-,trail:.
 "color scheme
 "highlight Normal ctermbg=NONE
 "highlight nonText ctermbg=NONE
-"set background=dark
+"set term=screen-256color
+set background=dark
 set termguicolors
+"colorscheme ron
+"if exists("$TMUX")
+"    let &t_RB = "\ePtmux;\e\e]11;?\007\e\\"
+"endif
 "let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 "let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 colorscheme solarized8
@@ -127,12 +132,14 @@ noremap <leader>fl :<C-U><C-R>=printf("Leaderf line %s", "")<CR><CR>
 
 noremap <C-B> :<C-U><C-R>=printf("Leaderf! rg --current-buffer -e %s ", expand("<cword>"))<CR>
 noremap <C-F> :<C-U><C-R>=printf("Leaderf! rg -e %s ", expand("<cword>"))<CR>
+noremap <C-S> :<C-U><C-R>=printf("Leaderf! rg -e %s ", "")<CR>
+
 " search visually selected text literally
 xnoremap gf :<C-U><C-R>=printf("Leaderf! rg -F -e %s ", leaderf#Rg#visual())<CR>
 noremap go :<C-U>Leaderf! rg --recall<CR>
 
 " should use `Leaderf gtags --update` first
-let g:Lf_GtagsAutoGenerate = 0
+let g:Lf_GtagsAutoGenerate = 1
 let g:Lf_Gtagslabel = 'native-pygments'
 noremap <leader>fr :<C-U><C-R>=printf("Leaderf! gtags -r %s --auto-jump", expand("<cword>"))<CR><CR>
 noremap <leader>fd :<C-U><C-R>=printf("Leaderf! gtags -d %s --auto-jump", expand("<cword>"))<CR><CR>
