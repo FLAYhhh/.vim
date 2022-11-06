@@ -154,5 +154,7 @@ let g:Lf_CommandMap = {'<C-K>': ['<Up>'], '<C-J>': ['<Down>']}
 " disable ycm
 "let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 
+" system clip board shotcut
+vnoremap <C-C> "+y
 
 
