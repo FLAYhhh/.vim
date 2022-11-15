@@ -101,7 +101,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
-source <(kubectl completion zsh)
+#source <(kubectl completion zsh)
 alias proxy='export http_proxy=http://localhost:8118; export https_proxy=http://localhost:8118;'
 alias unproxy='unset http_proxy; unset https_proxy;'
 #alias tmux='TERM=xterm-256color tmux'
