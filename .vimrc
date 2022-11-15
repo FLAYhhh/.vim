@@ -63,26 +63,6 @@ set noerrorbells visualbell t_vb=
 " sometimes be convenient.
 " set mouse+=a
 
-" Try to prevent bad habits like using the arrow keys for movement. This is
-" not the only possible bad habit. For example, holding down the h/j/k/l keys
-" for movement, rather than using more efficient movement commands, is also a
-" bad habit. The former is enforceable through a .vimrc, while we don't know
-" how to prevent the latter.
-" Do this in normal mode...
-"nnoremap <Left>  :echoe "Use h"<CR>
-"nnoremap <Right> :echoe "Use l"<CR>
-"nnoremap <Up>    :echoe "Use k"<CR>
-"nnoremap <Down>  :echoe "Use j"<CR>
-" ...and in insert mode
-"inoremap <Left>  <ESC>:echoe "Use h"<CR>
-"inoremap <Right> <ESC>:echoe "Use l"<CR>
-"inoremap <Up>    <ESC>:echoe "Use k"<CR>
-"inoremap <Down>  <ESC>:echoe "Use j"<CR>
-
-"CtrlP.vim
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
-
 "NERDTree.vim
 nnoremap <leader>n :NERDTreeFocus<CR>
 "nnoremap <C-n> :NERDTree<CR>
@@ -150,9 +130,3 @@ noremap <leader>fp :<C-U><C-R>=printf("Leaderf gtags --previous %s", "")<CR><CR>
 let g:Lf_CommandMap = {'<C-K>': ['<Up>'], '<C-J>': ['<Down>']}
 
 "let mapleader=","
-
-" disable ycm
-"let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
-
-
-

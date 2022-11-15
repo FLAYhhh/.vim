@@ -107,3 +107,5 @@ alias unproxy='unset http_proxy; unset https_proxy;'
 #alias tmux='TERM=xterm-256color tmux'
 
 export GTAGSFORCECPP=
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"

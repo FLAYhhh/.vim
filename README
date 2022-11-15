@@ -1,0 +1,15 @@
+## Dependencies
+- zsh
+- tmux
+- rg
+- GNU global
+- ss-local
+- privoxy
+- node
+- yarn
+...
+
+## TODO
+write a script to detect and install all tools automatically.
+
+

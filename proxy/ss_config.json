@@ -1,0 +1,9 @@
+{
+    "server":"www.lanzou.com.lanzoujj.xyz",
+    "server_port":12022,
+    "local_port":1080,
+    "password":"haMLMXirByn6rGVh",
+    "timeout":400,
+    "method":"aes-128-gcm"
+}
+
