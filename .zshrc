@@ -109,3 +109,4 @@ alias unproxy='unset http_proxy; unset https_proxy;'
 export GTAGSFORCECPP=
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="/usr/local/mysql/mysql/bin:$PATH"
