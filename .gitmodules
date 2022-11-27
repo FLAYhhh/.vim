@@ -1,9 +1,6 @@
 [submodule "pack/vendor/start/LeaderF"]
 	path = pack/vendor/start/LeaderF
 	url = https://github.com/Yggdroot/LeaderF.git
-[submodule "pack/themes/opt/solarized8"]
-	path = pack/themes/opt/solarized8
-	url = https://github.com/lifepillar/vim-solarized8.git
 [submodule "pack/vendor/start/YouCompleteMe"]
 	path = pack/vendor/start/YouCompleteMe
 	url = https://github.com/ycm-core/YouCompleteMe.git

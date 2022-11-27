@@ -1,6 +1,41 @@
-" Comments in Vimscript start with a `"`.
-
 " If you open this file in Vim, it'll be syntax highlighted for you.
+
+" plugin
+call plug#begin()
+" The default plugin directory will be as follows:
+"   - Vim (Linux/macOS): '~/.vim/plugged'
+"   - Vim (Windows): '~/vimfiles/plugged'
+"   - Neovim (Linux/macOS/Windows): stdpath('data') . '/plugged'
+" You can specify a custom plugin directory by passing it as the argument
+"   - e.g. `call plug#begin('~/.vim/plugged')`
+"   - Avoid using standard Vim directory names like 'plugin'
+Plug 'jackguo380/vim-lsp-cxx-highlight'
+Plug 'lifepillar/vim-solarized8'
+Plug 'liuchengxu/space-vim-dark'
+
+
+" Initialize plugin system
+" - Automatically executes `filetype plugin indent on` and `syntax enable`.
+call plug#end()
+
+"color scheme
+"highlight Normal ctermbg=NONE
+"highlight nonText ctermbg=NONE
+"set term=screen-256color
+set background=dark
+set termguicolors
+"colorscheme ron
+"if exists("$TMUX")
+"    let &t_RB = "\ePtmux;\e\e]11;?\007\e\\"
+"endif
+"let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+"let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+colorscheme solarized8
+"colorscheme space-vim-dark
+"hi Comment cterm=italic
+"hi LineNr ctermbg=NONE guibg=NONE
+
+syntax enable
 
 " Vim is based on Vi. Setting `nocompatible` switches from the default
 " Vi-compatibility mode and enables useful Vim functionality. This
@@ -16,6 +51,8 @@ syntax on
 
 " Disable the default Vim startup message.
 set shortmess+=I
+
+set autoindent expandtab tabstop=2 shiftwidth=2
 
 " Show line numbers.
 set number
@@ -76,21 +113,6 @@ set hlsearch
 set list
 set listchars=tab:>-,trail:.
 
-"color scheme
-"highlight Normal ctermbg=NONE
-"highlight nonText ctermbg=NONE
-"set term=screen-256color
-set background=dark
-set termguicolors
-"colorscheme ron
-"if exists("$TMUX")
-"    let &t_RB = "\ePtmux;\e\e]11;?\007\e\\"
-"endif
-"let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-"let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-colorscheme solarized8
-
-syntax enable
 
 """"""Leaderf config"""""""
 " don't show the help in normal mode
@@ -289,5 +311,14 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
+nnoremap <silent><nowait> <space>l  :<C-u>CocList<CR>
+
 nnoremap <silent> <space>g :<C-u>CocList --normal gstatus<CR>
 
+" vim-lsp-cxx-t
+"let g:coc_default_semantic_highlight_groups = 1
+"let g:lsp_cxx_hl_log_file = '/tmp/vim-lsp-cxx-hl.log'
+"let g:lsp_cxx_hl_verbose_log 1
+"let g:lsp_cxx_hl_use_text_props = 1
+
+"hi CocSemClass ctermfg=22  guifg=#cb4b16 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
